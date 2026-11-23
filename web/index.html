@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gauntlet — coding bounties graded by the chain</title>
+<meta name="description" content="Post a coding challenge with a GNOT reward. Solvers deploy a function, the chain runs the tests on-chain, and the earliest passing commit is paid instantly." />
+<link rel="stylesheet" href="styles.css" />
+<script src="config.js"></script>
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <div class="brand">Gaunt<span>let</span></div>
+    <nav id="nav">
+      <a href="#/" data-route="">Board</a>
+      <a href="#/post" data-route="post">Post a bounty</a>
+      <a href="#/solve" data-route="solve">How to solve</a>
+      <a href="#/leaderboard" data-route="leaderboard">Leaderboard</a>
+      <a href="#/judges" data-route="judges">Judges</a>
+      <a id="gnoweb" target="_blank" rel="noopener">gnoweb</a>
+    </nav>
+    <button class="btn" id="connect">Connect wallet</button>
+  </div>
+</header>
+<main class="wrap" id="view">Loading…</main>
+<div class="wrap">
+  <footer>
+    <div id="chain-info"></div>
+    <p>Gauntlet is a realm on gno.land. Everything you see here is read straight from the chain; every action is a transaction you sign.</p>
+  </footer>
+</div>
+<script type="module" src="app.js"></script>
+</body>
+</html>
