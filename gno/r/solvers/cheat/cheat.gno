@@ -4,7 +4,7 @@
 // challenge, whose inputs are generated at reveal time, it fails.
 package cheat
 
-import "gno.land/r/dev/gauntlet"
+import "gno.land/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet"
 
 // Solve is a lookup table, not a solution.
 func Solve(in string) string {

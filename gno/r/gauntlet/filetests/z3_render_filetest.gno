@@ -1,19 +1,19 @@
-// PKGPATH: gno.land/r/dev/main
+// PKGPATH: gno.land/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/main
 package main
 
 import (
 	"chain"
 	"testing"
 
-	"gno.land/r/dev/gauntlet"
-	"gno.land/r/dev/solvers/rev1"
+	"gno.land/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet"
+	"gno.land/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/solvers/rev1"
 )
 
 // The gnoweb pages, rendered from real state.
 func main(cur realm) {
 	poster := address("g1q646ctzhvn60v392yy4ldq5zyr8q5hnxee3zqe")
 	alice := address("g1jg8mtutu9khhfwc4nxmuhcpftf0pajdhfvsqf5")
-	boardAddr := chain.PackageAddress("gno.land/r/dev/gauntlet")
+	boardAddr := chain.PackageAddress("gno.land/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet")
 
 	coins := chain.Coins{{Denom: "ugnot", Amount: 3_000_000}}
 	testing.IssueCoins(boardAddr, coins)
@@ -24,7 +24,7 @@ func main(cur realm) {
 
 	testing.SetOriginSend(chain.Coins{})
 	testing.SetRealm(testing.NewUserRealm(alice))
-	gauntlet.Commit(cross(cur), id, gauntlet.HashFor("gno.land/r/dev/solvers/rev1", "s"))
+	gauntlet.Commit(cross(cur), id, gauntlet.HashFor("gno.land/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/solvers/rev1", "s"))
 
 	println("=== board ===")
 	println(gauntlet.Render(""))
@@ -48,7 +48,7 @@ func main(cur realm) {
 //
 // **Coding bounties graded by the chain, not by people.** Post a challenge with a GNOT reward. Solvers deploy a function, this realm runs the tests on-chain, and the earliest passing commit is paid instantly. No reviewer can refuse to pay, and copying someone's deployed code never wins.
 //
-// [Board](/r/dev/gauntlet) · [Leaderboard](/r/dev/gauntlet:leaderboard) · [Judges](/r/dev/gauntlet:judges) · [How to solve](/r/dev/gauntlet:solve)
+// [Board](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet) · [Leaderboard](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet:leaderboard) · [Judges](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet:judges) · [How to solve](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet:solve)
 //
 // | Open bounties | In escrow | Paid to solvers | Players |
 // |---|---|---|---|
@@ -58,7 +58,7 @@ func main(cur realm) {
 //
 // | # | Challenge | Reward | Graded by | Attempts | Time |
 // |---|---|---|---|---|---|
-// | 1 | [Reverse a string](/r/dev/gauntlet:c/1) | 3 GNOT | 2 tests | 1 | 2 days left |
+// | 1 | [Reverse a string](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet:c/1) | 3 GNOT | 2 tests | 1 | 2 days left |
 //
 // ## Recent winners
 //
@@ -70,18 +70,18 @@ func main(cur realm) {
 //
 // ---
 //
-// [Post a bounty with test cases](/r/dev/gauntlet$help&func=Post) · [Post a judged bounty](/r/dev/gauntlet$help&func=PostJudged)
+// [Post a bounty with test cases](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet$help&func=Post) · [Post a judged bounty](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet$help&func=PostJudged)
 //
 // === challenge, open ===
 // # #1 Reverse a string
 //
-// [Board](/r/dev/gauntlet) · [Leaderboard](/r/dev/gauntlet:leaderboard) · [Judges](/r/dev/gauntlet:judges) · [How to solve](/r/dev/gauntlet:solve)
+// [Board](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet) · [Leaderboard](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet:leaderboard) · [Judges](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet:judges) · [How to solve](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet:solve)
 //
 // > **Open** · reward **3 GNOT** · commits close Feb 15, 23:31 UTC (2 days left)
 //
 // | Reward | Bond per commit | Reveal window | Posted by | Posted |
 // |---|---|---|---|---|
-// | 3 GNOT | 0 GNOT | 30m0s | [g1q646ct…3zqe](/r/dev/gauntlet:u/g1q646ctzhvn60v392yy4ldq5zyr8q5hnxee3zqe) | Feb 13, 23:31 UTC |
+// | 3 GNOT | 0 GNOT | 30m0s | [g1q646ct…3zqe](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet:u/g1q646ctzhvn60v392yy4ldq5zyr8q5hnxee3zqe) | Feb 13, 23:31 UTC |
 //
 // ## The challenge
 //
@@ -110,13 +110,13 @@ func main(cur realm) {
 // ## Enter
 //
 // 1. Pick a realm path for your solution, e.g. `gno.land/r/<your-address>/solve1`, and a secret salt.
-// 2. Get your hash: `HashFor("<your realm path>", "<salt>")` and [commit it](/r/dev/gauntlet$help&func=Commit&.send=0ugnot&id=1) with the 0 GNOT bond.
+// 2. Get your hash: `HashFor("<your realm path>", "<salt>")` and [commit it](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet$help&func=Commit&.send=0ugnot&id=1) with the 0 GNOT bond.
 // 3. Deploy your realm (template below), then call its `Submit(1, "<salt>")` within 30m0s.
 //
 // ```go
 // package solve1
 //
-// import "gno.land/r/dev/gauntlet"
+// import "gno.land/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet"
 //
 // func Solve(in string) string {
 // 	// your code
@@ -129,7 +129,7 @@ func main(cur realm) {
 // ```
 //
 //
-// [Boost the reward](/r/dev/gauntlet$help&func=Boost&id=1) · [Settle](/r/dev/gauntlet$help&func=Settle&id=1)
+// [Boost the reward](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet$help&func=Boost&id=1) · [Settle](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet$help&func=Settle&id=1)
 //
 // ## Queue
 //
@@ -137,18 +137,18 @@ func main(cur realm) {
 //
 // | Place | Solver | Committed | Result | Solution |
 // |---|---|---|---|---|
-// | 1 | [g1jg8mtu…sqf5](/r/dev/gauntlet:u/g1jg8mtutu9khhfwc4nxmuhcpftf0pajdhfvsqf5) | Feb 13, 23:31 UTC | pending | — |
+// | 1 | [g1jg8mtu…sqf5](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet:u/g1jg8mtutu9khhfwc4nxmuhcpftf0pajdhfvsqf5) | Feb 13, 23:31 UTC | pending | — |
 //
 // === challenge, won ===
 // # #1 Reverse a string
 //
-// [Board](/r/dev/gauntlet) · [Leaderboard](/r/dev/gauntlet:leaderboard) · [Judges](/r/dev/gauntlet:judges) · [How to solve](/r/dev/gauntlet:solve)
+// [Board](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet) · [Leaderboard](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet:leaderboard) · [Judges](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet:judges) · [How to solve](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet:solve)
 //
-// > **Won** by [g1jg8mtu…sqf5](/r/dev/gauntlet:u/g1jg8mtutu9khhfwc4nxmuhcpftf0pajdhfvsqf5) for **3 GNOT**. Winning code: [/r/dev/solvers/rev1](/r/dev/solvers/rev1$source)
+// > **Won** by [g1jg8mtu…sqf5](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet:u/g1jg8mtutu9khhfwc4nxmuhcpftf0pajdhfvsqf5) for **3 GNOT**. Winning code: [/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/solvers/rev1](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/solvers/rev1$source)
 //
 // | Reward | Bond per commit | Reveal window | Posted by | Posted |
 // |---|---|---|---|---|
-// | 3 GNOT | 0 GNOT | 30m0s | [g1q646ct…3zqe](/r/dev/gauntlet:u/g1q646ctzhvn60v392yy4ldq5zyr8q5hnxee3zqe) | Feb 13, 23:31 UTC |
+// | 3 GNOT | 0 GNOT | 30m0s | [g1q646ct…3zqe](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet:u/g1q646ctzhvn60v392yy4ldq5zyr8q5hnxee3zqe) | Feb 13, 23:31 UTC |
 //
 // ## The challenge
 //
@@ -180,21 +180,21 @@ func main(cur realm) {
 //
 // | Place | Solver | Committed | Result | Solution |
 // |---|---|---|---|---|
-// | 1 | [g1jg8mtu…sqf5](/r/dev/gauntlet:u/g1jg8mtutu9khhfwc4nxmuhcpftf0pajdhfvsqf5) | Feb 13, 23:31 UTC | **winner** passed (2/2) | [source](/r/dev/solvers/rev1$source) |
+// | 1 | [g1jg8mtu…sqf5](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet:u/g1jg8mtutu9khhfwc4nxmuhcpftf0pajdhfvsqf5) | Feb 13, 23:31 UTC | **winner** passed (2/2) | [source](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/solvers/rev1$source) |
 //
 // === leaderboard ===
 // # Leaderboard
 //
-// [Board](/r/dev/gauntlet) · [Leaderboard](/r/dev/gauntlet:leaderboard) · [Judges](/r/dev/gauntlet:judges) · [How to solve](/r/dev/gauntlet:solve)
+// [Board](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet) · [Leaderboard](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet:leaderboard) · [Judges](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet:judges) · [How to solve](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet:solve)
 //
 // | Rank | Solver | Solved | Earned |
 // |---|---|---|---|
-// | 1 | [g1jg8mtu…sqf5](/r/dev/gauntlet:u/g1jg8mtutu9khhfwc4nxmuhcpftf0pajdhfvsqf5) | 1 | 3 GNOT |
+// | 1 | [g1jg8mtu…sqf5](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet:u/g1jg8mtutu9khhfwc4nxmuhcpftf0pajdhfvsqf5) | 1 | 3 GNOT |
 //
 // === profile ===
 // # g1jg8mtu…sqf5
 //
-// [Board](/r/dev/gauntlet) · [Leaderboard](/r/dev/gauntlet:leaderboard) · [Judges](/r/dev/gauntlet:judges) · [How to solve](/r/dev/gauntlet:solve)
+// [Board](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet) · [Leaderboard](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet:leaderboard) · [Judges](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet:judges) · [How to solve](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet:solve)
 //
 // `g1jg8mtutu9khhfwc4nxmuhcpftf0pajdhfvsqf5`
 //
@@ -204,9 +204,9 @@ func main(cur realm) {
 //
 // ## Wins
 //
-// - [Reverse a string](/r/dev/gauntlet:c/1) · 3 GNOT
+// - [Reverse a string](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet:c/1) · 3 GNOT
 //
 // === unknown path ===
 // # Not found
 //
-// [Back to the board](/r/dev/gauntlet)
+// [Back to the board](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet)

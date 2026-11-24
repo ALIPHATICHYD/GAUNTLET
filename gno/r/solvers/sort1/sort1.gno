@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"gno.land/r/dev/gauntlet"
+	"gno.land/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet"
 )
 
 // Solve sorts a comma-separated list of integers ascending.

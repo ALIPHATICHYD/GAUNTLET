@@ -1,4 +1,4 @@
-// PKGPATH: gno.land/r/dev/main
+// PKGPATH: gno.land/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/main
 package main
 
 import (
@@ -6,8 +6,8 @@ import (
 	"chain/banker"
 	"testing"
 
-	"gno.land/r/dev/gauntlet"
-	"gno.land/r/dev/solvers/rev1"
+	"gno.land/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet"
+	"gno.land/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/solvers/rev1"
 )
 
 // A full round: a poster funds a bounty, a solver commits, deploys and
@@ -19,7 +19,7 @@ import (
 func main(cur realm) {
 	poster := address("g1q646ctzhvn60v392yy4ldq5zyr8q5hnxee3zqe")
 	solver := address("g1jg8mtutu9khhfwc4nxmuhcpftf0pajdhfvsqf5")
-	boardAddr := chain.PackageAddress("gno.land/r/dev/gauntlet")
+	boardAddr := chain.PackageAddress("gno.land/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet")
 	bk := banker.NewReadonlyBanker()
 
 	// The poster funds a 2 GNOT bounty: 12 hours, 0.5 GNOT bond, 30 minute window.
@@ -31,7 +31,7 @@ func main(cur realm) {
 	println("board holds:", bk.GetCoin(boardAddr, "ugnot"))
 
 	// The solver commits the hash of their realm path and a secret salt.
-	hash := gauntlet.HashFor("gno.land/r/dev/solvers/rev1", "my-secret")
+	hash := gauntlet.HashFor("gno.land/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/solvers/rev1", "my-secret")
 	fund(boardAddr, 500_000)
 	testing.SetRealm(testing.NewUserRealm(solver))
 	gauntlet.Commit(cross(cur), id, hash)
@@ -60,4 +60,4 @@ func fund(to address, amount int64) {
 // board holds after commit: 2500000
 // board holds after payout: 0
 // solver holds: 2500000
-// {"id":1,"title":"Reverse a string","spec":"Return the input reversed.","status":"won","poster":"g1q646ctzhvn60v392yy4ldq5zyr8q5hnxee3zqe","reward":2000000,"pot":2000000,"bond":500000,"boosts":0,"forfeited":0,"created":1234567890,"deadline":1234611090,"window":1800,"judge":"","cases":[{"in":"abc","want":"cba"},{"in":"hello","want":"olleh"}],"attempts":[{"seq":1,"solver":"g1jg8mtutu9khhfwc4nxmuhcpftf0pajdhfvsqf5","hash":"38c204cb2c6fdb160b08ebc78f729eddc087f9047832fe344857aa3df979e361","committed":1234567890,"state":"passed","pkgpath":"gno.land/r/dev/solvers/rev1","passed":2,"total":2,"failIn":"","failGot":"","failWant":"","winner":true}]}
+// {"id":1,"title":"Reverse a string","spec":"Return the input reversed.","status":"won","poster":"g1q646ctzhvn60v392yy4ldq5zyr8q5hnxee3zqe","reward":2000000,"pot":2000000,"bond":500000,"boosts":0,"forfeited":0,"created":1234567890,"deadline":1234611090,"window":1800,"judge":"","cases":[{"in":"abc","want":"cba"},{"in":"hello","want":"olleh"}],"attempts":[{"seq":1,"solver":"g1jg8mtutu9khhfwc4nxmuhcpftf0pajdhfvsqf5","hash":"507b14b79bff05d8d070068c833d2fbc865a5accd85e4fc45f9cd16edc4802d1","committed":1234567890,"state":"passed","pkgpath":"gno.land/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/solvers/rev1","passed":2,"total":2,"failIn":"","failGot":"","failWant":"","winner":true}]}

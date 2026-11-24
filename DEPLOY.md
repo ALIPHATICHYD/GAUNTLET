@@ -24,27 +24,14 @@ Your realms deploy under your address namespace, e.g.
 name** cannot start with "Gno" — "Gauntlet" is fine. The package path contains
 `gno.land` because that is the chain domain; that is every realm and is allowed.
 
-## 1. Point the packages at your namespace
+## 1. Namespace (already done)
 
-The code in this repo uses the placeholder namespace `dev`. Before deploying,
-replace it with your address so the import paths resolve. From the repo root:
-
-```bash
-NS=g1youraddress...            # your address from `gnokey list`
-grep -rl 'r/dev/\|p/dev/' gno | xargs sed -i '' \
-  -e "s#gno.land/p/dev/#gno.land/p/$NS/#g" \
-  -e "s#gno.land/r/dev/#gno.land/r/$NS/#g"
-# and the module lines in each gnomod.toml
-grep -rl 'module = "gno.land/[pr]/dev/' gno | xargs sed -i '' "s#/dev/#/$NS/#g"
-```
-
-(On Linux drop the `''` after `-i`.)
-
-Re-run the tests to be sure nothing broke:
+The code is already set to your address, `g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x`, so every package path is
+`gno.land/{p,r}/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/...`. Just set the variable in your terminal:
 
 ```bash
-# link this repo into a gno examples tree, or use gnodev (below), then:
-gno test gno.land/p/$NS/gauntlet gno.land/r/$NS/gauntlet/...
+NS=g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x
+cd ~/gauntlet && git pull
 ```
 
 ## 2. Try it locally first (recommended)

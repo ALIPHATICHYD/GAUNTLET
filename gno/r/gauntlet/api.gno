@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"gno.land/p/dev/gauntlet"
+	"gno.land/p/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet"
 )
 
 // The functions below return JSON for the web app (vm/qeval). They only read.

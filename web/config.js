@@ -2,7 +2,7 @@
 // Change REALM after you deploy under your own namespace.
 window.GAUNTLET = {
   // The board realm's package path on chain.
-  REALM: "gno.land/r/dev/gauntlet",
+  REALM: "gno.land/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet",
   // Onyx is the gno.land testnet on the mainnet line.
   RPC: "https://rpc.onyx.testnets.gno.land",
   CHAIN_ID: "onyx-1",

@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"gno.land/p/dev/gauntlet"
+	"gno.land/p/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet"
 	txlink "gno.land/p/moul/txlink/v0"
 	"gno.land/p/nt/markdown/sanitize/v0"
 )

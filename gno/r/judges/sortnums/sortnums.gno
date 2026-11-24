@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"strings"
 
-	"gno.land/r/dev/gauntlet"
+	"gno.land/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet"
 )
 
 func init(cur realm) {
@@ -81,5 +81,5 @@ func (r *rng) next() uint64 {
 }
 
 func Render(_ string) string {
-	return "# Sort numbers judge\n\nA [Gauntlet](/r/dev/gauntlet:judges) judge. Read the source to see exactly how answers are checked.\n"
+	return "# Sort numbers judge\n\nA [Gauntlet](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet:judges) judge. Read the source to see exactly how answers are checked.\n"
 }

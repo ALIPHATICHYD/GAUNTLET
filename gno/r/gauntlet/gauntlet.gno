@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"gno.land/p/dev/gauntlet"
+	"gno.land/p/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet"
 	"gno.land/p/nt/avl/v0"
 )
 

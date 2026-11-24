@@ -4,7 +4,7 @@
 // Solve to the board, which runs the tests on-chain and records the result.
 package rev1
 
-import "gno.land/r/dev/gauntlet"
+import "gno.land/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet"
 
 // Solve reverses in by runes.
 func Solve(in string) string {
@@ -21,5 +21,5 @@ func Submit(cur realm, id uint64, salt string) {
 }
 
 func Render(_ string) string {
-	return "# rev1\n\nAn example [Gauntlet](/r/dev/gauntlet) solution: `Solve` reverses a string.\n"
+	return "# rev1\n\nAn example [Gauntlet](/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet) solution: `Solve` reverses a string.\n"
 }

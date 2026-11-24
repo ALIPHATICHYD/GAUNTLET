@@ -10,7 +10,7 @@ someone's deployed code never wins.
 Built on [gno.land](https://gno.land) for the Gnome Tavern hackathon.
 
 - **Live demo:** _(testnet URL after deploy — see DEPLOY.md)_
-- **Realm in gnoweb:** _(https://onyx.testnets.gno.land/r/<namespace>/gauntlet)_
+- **Realm in gnoweb:** _(https://onyx.testnets.gno.land/r/g188c5k6v0tmfyevfzj962jkajjqt4ddtml8zw0x/gauntlet)_
 - **Web app:** `web/` (static, no build step)
 
 ## Why it is interesting
